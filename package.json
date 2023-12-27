@@ -1,0 +1,27 @@
+{
+  "name": "quotes",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "index.js",
+  "private":"true",
+  "scripts": {
+    "test": "test",
+    "build":"webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielsafari143/quotes.git"
+  },
+  "author": "Safari Hamuli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielsafari143/quotes/issues"
+  },
+  "homepage": "https://github.com/danielsafari143/quotes#readme",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
