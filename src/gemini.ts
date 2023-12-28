@@ -8,8 +8,7 @@ const run = async (inputMessage?:string):Promise<string> => {
 
   const result = await model.generateContent(prompt);
   const response = await result.response;
-  const text = response.text();
-  console.log(text)
+  const text = await response.text();
   return text;
 };
 
