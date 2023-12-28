@@ -1,4 +1,5 @@
-import Inputs from "./input";
 import "./style.css";
+import Inputs from "./input";
+
 
 Inputs("homepage");
