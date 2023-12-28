@@ -2,9 +2,9 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAi = new GoogleGenerativeAI("AIzaSyD9j9ZQ-Sy7_OroQ0c1FZE2J66R2xC5ocA");
 
-const run = async (): Promise<string> => {
+const run = async (inputMessage?:string):Promise<string> => {
   const model = genAi.getGenerativeModel({ model: "gemini-pro" });
-  const prompt = "Write a story about a magic girl";
+  const prompt = inputMessage ? inputMessage : 'Wright for me three quotes on life'
 
   const result = await model.generateContent(prompt);
   const response = await result.response;
