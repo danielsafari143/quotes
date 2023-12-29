@@ -8,12 +8,17 @@ const run = async (inputMessage?: string): Promise<string> => {
     ? inputMessage
     : "Wright for me three quotes on life";
 
-  const result = await model.generateContent(
-    `write for me three quotes with some humain emotions about this :${prompt}`,
-  );
-  const response = await result.response;
-  const text = await response.text();
-  return text;
+  try {
+    const result = await model.generateContent(
+      `write for me three quotes with some humain emotions about this :${prompt}`,
+    );
+    const response = await result.response;
+    const text = await response.text();
+    return text;
+
+  } catch (error) {
+    throw new Error(error)
+  }
 };
 
 export default run;
