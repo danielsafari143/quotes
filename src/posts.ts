@@ -5,6 +5,8 @@ export default function posts(response: string, homepage: string) {
   quotes.innerHTML = ""
 
   for (let i = 0; i < val.length; i++) {
-   quotes.innerHTML += `<p class="border border-slate-150 p-10">${val[i]}<p>`
+   if(val[i].length > 10){
+    quotes.innerHTML += `<p class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">${val[i]}<p>`
+   }
   }
 }
