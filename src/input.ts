@@ -20,9 +20,9 @@ export default function Inputs(params: params): void {
 
   homepage = document.getElementById(params.idContainer);
   if (params.tagName == "input") {
-    childElement = `<${params.tagName} placeholder="${params.placeholder}" id="${params.tagName}" class="${params.style}"/>`;
+    childElement = `<${params.tagName} placeholder="${params.placeholder}" id="${params.tagName}" class="ring-2 ring-slate-500 outline outline-slate-100 px-3 rounded-sm h-10 w-6/12"/>`;
   } else {
-    childElement = `<${params.tagName} id="${params.name}" class="${params.style}">${params.name}</${params.tagName}>`;
+    childElement = `<${params.tagName} id="${params.name}" class="bg-blue-400">${params.name}</${params.tagName}>`;
   }
 
   homepage.innerHTML += childElement;

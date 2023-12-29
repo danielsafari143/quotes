@@ -13,7 +13,7 @@ Inputs({
 });
 
 
-Inputs({ idContainer: "homepage", tagName: "button", name: "Envoyer" });
+Inputs({ idContainer: "homepage", tagName: "button", name: "Envoyer",style });
 
 document.getElementById("Envoyer").addEventListener("click", (e) => {
   const inpt = <HTMLInputElement>document.getElementById("input");
