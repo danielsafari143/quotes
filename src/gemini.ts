@@ -10,7 +10,7 @@ const run = async (inputMessage?: string): Promise<string> => {
     : "Wright for me three quotes on life";
 
   try {
-    spinner()
+    spinner();
     const result = await model.generateContent(
       `write for me three quotes of same length of letters with humain emotions about this , the response must be in an array splitted with #:${prompt}`,
     );
