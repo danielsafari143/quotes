@@ -5,6 +5,6 @@ export default function posts(response: string, homepage: string) {
   quotes.innerHTML = ""
 
   for (let i = 0; i < val.length; i++) {
-   quotes.innerHTML += `<p>${val[i]}<p>`
+   quotes.innerHTML += `<p class="border border-slate-150 p-10">${val[i]}<p>`
   }
 }
