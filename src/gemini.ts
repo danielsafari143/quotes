@@ -12,7 +12,7 @@ const run = async (inputMessage?: string): Promise<string> => {
   try {
     spinner();
     const result = await model.generateContent(
-      `write for me three quotes of same length of letters with humain emotions about this , the response must be in an array splitted with #:${prompt}`,
+      `write for me 3 quotes of same lengths of letters with humain emotions , the response must be in an array splitted with # , the quotes must be about this words:${prompt}`,
     );
     const response = await result.response;
     const text = await response.text();
